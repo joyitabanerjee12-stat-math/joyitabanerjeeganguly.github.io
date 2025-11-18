@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --header: #2c3e50;
+    --nav: #34495e;
+}
+
+.dark-mode {
+    --bg: #1e1e1e;
+    --text: #eaeaea;
+    --header: #111;
+    --nav: #222;
+}
+
+header {
+    background: var(--header);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    background: var(--nav);
+    padding: 10px;
+    margin-top: 15px;
+}
+
+section {
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+#modeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 7px 15px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
